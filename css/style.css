@@ -118,7 +118,7 @@ nav {
   margin: 5px auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   nav {
     padding: 10px;
@@ -164,7 +164,8 @@ nav {
     right: 10px;
     width: 100%;
     background: rgb(253,254,255);
-    background: linear-gradient(90deg, rgba(253,254,255,1) 0%, rgba(197,211,194,1) 15%, rgba(103,171,84,0.9823717948717948) 41%, rgba(40,112,29,1) 76%, rgba(5,65,3,1) 100%);
+    background: radial-gradient(circle at 10% 20%, rgb(147, 230, 241) 0%, rgb(145, 192, 241) 45.5%);
+    border-radius: 8px;;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -196,6 +197,44 @@ nav {
 
   .links.active .bar:nth-child(3) {
     transform: translateY(-10px);
+  }
+
+  .banner {
+    margin-top: 5px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(0, 0, 0, 0.397) 15%
+      ),
+      url("./../media/mainpagebg.webp");
+    height: 100%;
+    
+  
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: 0.5s ease-out 0s 1 slideInLeft;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    padding-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30vw;
+    font-weight:800;
+    margin-top: -10px;
+    font-stretch: expanded;
   }
 }
 

@@ -244,7 +244,8 @@
         right: 10px;
         width: 100%;
         background: rgb(253,254,255);
-        background: linear-gradient(90deg, rgba(253,254,255,1) 0%, rgba(197,211,194,1) 15%, rgba(103,171,84,0.9823717948717948) 41%, rgba(40,112,29,1) 76%, rgba(5,65,3,1) 100%);
+        background: radial-gradient(circle at 10% 20%, rgb(147, 230, 241) 0%, rgb(145, 192, 241) 45.5%);
+        border-radius: 8px;;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);

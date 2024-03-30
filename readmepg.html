@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>READ ME</title>
     <link rel="stylesheet" href="css/stylerm.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -55,7 +56,7 @@
         </div>
 
         <div class="reminders"><h1>Important Reminders:</h1>
-            <h2>1. If you are going to run iConsult on your phone, ensure first that you have installed the Google Sheet Application.<br/>
+            <h2>1. For phone users, the spreadsheet will automatically open on your browser without needing to install the Google Sheet application. Just remember to turn on 'Desktop Site' Viewing Mode in your browser settings for a smoother experience.<br/>
               2. Make sure to enter your personal information correctly.<br>
                 3. REGISTER FIRST, before entering/creating a queue. The system will automatically
                 reject your entries if you are not registered.<br/>
@@ -67,8 +68,14 @@
                 6. Do not forget to update your consultation status (DONE or WAITING).
             
             </h2></div>
-
-
-
+            <script
+            const hamburger = document.querySelector(".hamburger");
+                  const links = document.querySelector(".links");
+            
+                  hamburger.addEventListener("click", () => {
+                    links.classList.toggle("active");
+                  };
+            
+            </script>
   </body>
   </html>
